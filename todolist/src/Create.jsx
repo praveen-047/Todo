@@ -7,7 +7,6 @@ function Create(){
     const handleAdd = async ()=>{
         try {
             const response = await axios.post('http://localhost:3000/add',{task:task})
-            console.log(response)
         } catch (error) {
             console.log(`error : ${error}`)
         }        
